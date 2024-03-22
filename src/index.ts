@@ -27,6 +27,9 @@ app.get("/api/v1", (req: Request, res: Response) => {
 app.post("/api/v1", (req: Request, res: Response) => {
   res.json("Express + TypeScript Server");
 });
+app.post("/api/v1/login", (req: Request, res: Response) => {
+  res.json("Express + TypeScript Server");
+});
 
 app.use(notFound)
 app.use(errorHandler)
