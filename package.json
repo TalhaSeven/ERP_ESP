@@ -1,0 +1,34 @@
+{
+  "name": "create-express-ts",
+  "version": "1.0.3",
+  "description": "",
+  "main": "bin/cli.js",
+  "bin": {
+    "create-express-ts": "bin/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "concurrently \"tsc --watch\" \"nodemon -q dist/index.js\""
+  },
+  "keywords": [
+    "express",
+    "typescript",
+    "starter"
+  ],
+  "author": "Joe Previte<jjprevite@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.1",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/morgan": "^1.9.9",
+    "@types/node": "^20.11.30",
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.1.0",
+    "typescript": "~5.4.3"
+  }
+}
